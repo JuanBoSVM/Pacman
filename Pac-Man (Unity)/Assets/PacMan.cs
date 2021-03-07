@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PacMan : MonoBehaviour
 {
     public float speed = 4.0f;
     private Vector2 direction = Vector2.zero;
@@ -23,7 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void CheckInput()
     {
-        if (CheckInput.GetKeyDown (KeyCode.LeftArrow))
+        if (CheckInput.GetKeyDown(KeyCode.LeftArrow))
         {
             direction = Vector2.left;
         }
@@ -76,3 +76,4 @@ public class NewBehaviourScript : MonoBehaviour
         }
     }
 }
+
