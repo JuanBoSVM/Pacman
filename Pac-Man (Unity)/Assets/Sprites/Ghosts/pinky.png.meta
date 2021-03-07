@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 02e5007cd29cd88458a8f29e9b6ad248
+guid: a03cd9a4bab618343a66147f791bf00e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6679698536114150705
-    second: pacman_0
+      213: -1859987680939633635
+    second: pinky_0
   - first:
-      213: -6846246853087037126
-    second: pacman_1
+      213: -2856251577569088527
+    second: pinky_1
   - first:
-      213: -343595675399140622
-    second: pacman_2
+      213: -8091883645992246539
+    second: pinky_2
   - first:
-      213: -4576091372461162260
-    second: pacman_3
+      213: 7902685211365138667
+    second: pinky_3
   - first:
-      213: 469561110914596722
-    second: pacman_4
+      213: -5748442266880440911
+    second: pinky_4
   - first:
-      213: 1233117339249576371
-    second: pacman_5
+      213: 3026797706502527604
+    second: pinky_5
+  - first:
+      213: 376696537711590619
+    second: pinky_6
+  - first:
+      213: -9094697844065141296
+    second: pinky_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pacman_0
+      name: pinky_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13dd7c39d6e03bc50800000000000000
-      internalID: 6679698536114150705
+      spriteID: d149dfe0f0fff26e0800000000000000
+      internalID: -1859987680939633635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_1
+      name: pinky_1
       rect:
         serializedVersion: 2
         x: 32
@@ -146,20 +152,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a397c1592ce3df0a0800000000000000
-      internalID: -6846246853087037126
+      spriteID: 1fb68d1c25e8c58d0800000000000000
+      internalID: -2856251577569088527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_2
+      name: pinky_2
       rect:
         serializedVersion: 2
         x: 64
@@ -167,20 +173,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fa497dbd8d4b3bf0800000000000000
-      internalID: -343595675399140622
+      spriteID: 5f2e6d452bad3bf80800000000000000
+      internalID: -8091883645992246539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_3
+      name: pinky_3
       rect:
         serializedVersion: 2
         x: 96
@@ -188,20 +194,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce009b454257e70c0800000000000000
-      internalID: -4576091372461162260
+      spriteID: be0e62b545afbad60800000000000000
+      internalID: 7902685211365138667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_4
+      name: pinky_4
       rect:
         serializedVersion: 2
         x: 128
@@ -209,20 +215,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ff660b757348600800000000000000
-      internalID: 469561110914596722
+      spriteID: 1b500cef63e6930b0800000000000000
+      internalID: -5748442266880440911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_5
+      name: pinky_5
       rect:
         serializedVersion: 2
         x: 160
@@ -230,14 +236,56 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b9885ccfa9ec1110800000000000000
-      internalID: 1233117339249576371
+      spriteID: 47adc073a78510a20800000000000000
+      internalID: 3026797706502527604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinky_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc3b66518b4a3500800000000000000
+      internalID: 376696537711590619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinky_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd7cf02f7429c180800000000000000
+      internalID: -9094697844065141296
       vertices: []
       indices: 
       edges: []
