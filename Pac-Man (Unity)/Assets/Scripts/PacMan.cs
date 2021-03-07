@@ -10,7 +10,7 @@ public class PacMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        direction = Vector2.right;
     }
 
     // Update is called once per frame
@@ -19,6 +19,7 @@ public class PacMan : MonoBehaviour
         CheckInput();
         Move();
         UpdateOrientation();
+        //Alive();
     }
 
     void CheckInput()
@@ -75,5 +76,13 @@ public class PacMan : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 270);
         }
     }
+
+    //void Alive()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Q))
+    //    {
+    //        direction = Vector2.left;
+    //    }
+    //}
 }
 
