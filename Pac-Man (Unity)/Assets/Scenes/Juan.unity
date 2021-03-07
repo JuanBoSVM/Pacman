@@ -158,6 +158,9 @@ MonoBehaviour:
   colission:
     serializedVersion: 2
     m_Bits: 256
+  ghosts:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!95 &311120671
 Animator:
   serializedVersion: 3

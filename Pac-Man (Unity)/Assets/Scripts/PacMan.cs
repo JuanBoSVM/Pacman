@@ -9,6 +9,7 @@ public class PacMan : MonoBehaviour
     private Vector2 direction = Vector2.zero;
     public Animator anim;
     public LayerMask colission;
+    public LayerMask ghosts;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,13 @@ public class PacMan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Physics2D.OverlapCircle(transform.position, .2f, ghosts))
+        {
+            gameObject.GetComponent<Animator>().enabled = true;
+            speed = 0.0f;
+            anim.SetBool("Alive", false);
+        }
 
         if (Vector3.Distance(transform.position, movePoint.position) == 0f)
         {
@@ -39,13 +47,6 @@ public class PacMan : MonoBehaviour
 
         Move();
         UpdateOrientation();
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            gameObject.GetComponent<Animator>().enabled = true;
-            speed = 0.0f;
-            anim.SetBool("Alive", false);
-        }
     }
 
     void CheckInput()
