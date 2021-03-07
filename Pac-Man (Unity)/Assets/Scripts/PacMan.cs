@@ -4,50 +4,65 @@ using UnityEngine;
 
 public class PacMan : MonoBehaviour
 {
-    public float speed = 4.0f;
+    public float speed = 5.0f;
+    public Transform movePoint;
     private Vector2 direction = Vector2.zero;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Detach the move point from the player
+        movePoint.parent = null;
         direction = Vector2.right;
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckInput();
+        if (Vector3.Distance(transform.position, movePoint.position) == 0f)
+        {
+            CheckInput();
+        }
+
         Move();
         UpdateOrientation();
-        //Alive();
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            speed = 0.0f;
+            anim.SetBool("Alive", false);
+        }
     }
 
     void CheckInput()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
         {
-            direction = Vector2.left;
+            movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+
+            direction.x = Input.GetAxisRaw("Horizontal");
+            direction.y = 0f;
         }
 
-        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
         {
-            direction = Vector2.right;
+            movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+
+            direction.x = 0f;
+            direction.y = Input.GetAxisRaw("Vertical");
         }
 
-        else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-        {
-            direction = Vector2.up;
-        }
 
-        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        else
         {
-            direction = Vector2.down;
+            movePoint.position += (Vector3)direction;
         }
     }
 
     void Move()
     {
-        transform.localPosition += (Vector3)(direction * speed) * Time.deltaTime;
+        transform.localPosition = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
     }
 
     void UpdateOrientation()
@@ -76,13 +91,5 @@ public class PacMan : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 270);
         }
     }
-
-    //void Alive()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Q))
-    //    {
-    //        direction = Vector2.left;
-    //    }
-    //}
 }
 
