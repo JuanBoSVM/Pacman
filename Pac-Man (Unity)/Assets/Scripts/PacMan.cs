@@ -23,22 +23,22 @@ public class PacMan : MonoBehaviour
 
     void CheckInput()
     {
-        if (CheckInput.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             direction = Vector2.left;
         }
 
-        else if (CheckInput.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             direction = Vector2.right;
         }
 
-        else if (CheckInput.GetKeyDown(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             direction = Vector2.up;
         }
 
-        else if (CheckInput.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             direction = Vector2.down;
         }
