@@ -6,6 +6,7 @@ public class PacMan : MonoBehaviour
 {
     public float speed = 4.0f;
     private Vector2 direction = Vector2.zero;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,6 @@ public class PacMan : MonoBehaviour
         CheckInput();
         Move();
         UpdateOrientation();
-        //Alive();
     }
 
     void CheckInput()
@@ -42,6 +42,12 @@ public class PacMan : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             direction = Vector2.down;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            speed = 0.0f;
+            anim.SetBool("Alive", false);
         }
     }
 
@@ -76,13 +82,5 @@ public class PacMan : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 270);
         }
     }
-
-    //void Alive()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Q))
-    //    {
-    //        direction = Vector2.left;
-    //    }
-    //}
 }
 
