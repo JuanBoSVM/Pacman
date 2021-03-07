@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 02e5007cd29cd88458a8f29e9b6ad248
+guid: ea24a187e88595445aae9199dc524124
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6679698536114150705
-    second: pacman_0
+      213: 4082123663037807683
+    second: clyde_0
   - first:
-      213: -6846246853087037126
-    second: pacman_1
+      213: 7525734713798459664
+    second: clyde_1
   - first:
-      213: -343595675399140622
-    second: pacman_2
+      213: -6765644127124586003
+    second: clyde_2
   - first:
-      213: -4576091372461162260
-    second: pacman_3
+      213: -5451699081336584416
+    second: clyde_3
   - first:
-      213: 469561110914596722
-    second: pacman_4
+      213: 5819633547673104869
+    second: clyde_4
   - first:
-      213: 1233117339249576371
-    second: pacman_5
+      213: 3100083324226068431
+    second: clyde_5
+  - first:
+      213: 6775415182734720524
+    second: clyde_6
+  - first:
+      213: 2660622380777468888
+    second: clyde_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pacman_0
+      name: clyde_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13dd7c39d6e03bc50800000000000000
-      internalID: 6679698536114150705
+      spriteID: 34cb590f7dd96a830800000000000000
+      internalID: 4082123663037807683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_1
+      name: clyde_1
       rect:
         serializedVersion: 2
         x: 32
@@ -146,20 +152,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a397c1592ce3df0a0800000000000000
-      internalID: -6846246853087037126
+      spriteID: 01188c169d7c07860800000000000000
+      internalID: 7525734713798459664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_2
+      name: clyde_2
       rect:
         serializedVersion: 2
         x: 64
@@ -167,20 +173,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fa497dbd8d4b3bf0800000000000000
-      internalID: -343595675399140622
+      spriteID: de10806238a9b12a0800000000000000
+      internalID: -6765644127124586003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_3
+      name: clyde_3
       rect:
         serializedVersion: 2
         x: 96
@@ -188,20 +194,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce009b454257e70c0800000000000000
-      internalID: -4576091372461162260
+      spriteID: 0270c92e19ca754b0800000000000000
+      internalID: -5451699081336584416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_4
+      name: clyde_4
       rect:
         serializedVersion: 2
         x: 128
@@ -209,20 +215,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ff660b757348600800000000000000
-      internalID: 469561110914596722
+      spriteID: 5e1700cb0ed73c050800000000000000
+      internalID: 5819633547673104869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_5
+      name: clyde_5
       rect:
         serializedVersion: 2
         x: 160
@@ -230,14 +236,56 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b9885ccfa9ec1110800000000000000
-      internalID: 1233117339249576371
+      spriteID: fcf5b92cb55b50b20800000000000000
+      internalID: 3100083324226068431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clyde_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ef0b4063c170e50800000000000000
+      internalID: 6775415182734720524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clyde_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3f1bf65fd6ce420800000000000000
+      internalID: 2660622380777468888
       vertices: []
       indices: 
       edges: []

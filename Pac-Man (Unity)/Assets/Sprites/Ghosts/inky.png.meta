@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 02e5007cd29cd88458a8f29e9b6ad248
+guid: 9dd41288b8b94834fa7489eb2bec60c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6679698536114150705
-    second: pacman_0
+      213: -3441670517663871490
+    second: inky_0
   - first:
-      213: -6846246853087037126
-    second: pacman_1
+      213: 7174320697446596715
+    second: inky_1
   - first:
-      213: -343595675399140622
-    second: pacman_2
+      213: 8766576594556877958
+    second: inky_2
   - first:
-      213: -4576091372461162260
-    second: pacman_3
+      213: -7986541656004181308
+    second: inky_3
   - first:
-      213: 469561110914596722
-    second: pacman_4
+      213: 536603214257810331
+    second: inky_4
   - first:
-      213: 1233117339249576371
-    second: pacman_5
+      213: 5274840410017523168
+    second: inky_5
+  - first:
+      213: -6741441680969059686
+    second: inky_6
+  - first:
+      213: -3156203806068910973
+    second: inky_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pacman_0
+      name: inky_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +131,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13dd7c39d6e03bc50800000000000000
-      internalID: 6679698536114150705
+      spriteID: efdc5b026eabc30d0800000000000000
+      internalID: -3441670517663871490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_1
+      name: inky_1
       rect:
         serializedVersion: 2
         x: 32
@@ -146,20 +152,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a397c1592ce3df0a0800000000000000
-      internalID: -6846246853087037126
+      spriteID: b608904c9ae409360800000000000000
+      internalID: 7174320697446596715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_2
+      name: inky_2
       rect:
         serializedVersion: 2
         x: 64
@@ -167,20 +173,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fa497dbd8d4b3bf0800000000000000
-      internalID: -343595675399140622
+      spriteID: 68cf0d627f229a970800000000000000
+      internalID: 8766576594556877958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_3
+      name: inky_3
       rect:
         serializedVersion: 2
         x: 96
@@ -188,20 +194,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce009b454257e70c0800000000000000
-      internalID: -4576091372461162260
+      spriteID: 4c2c20aadaa1a2190800000000000000
+      internalID: -7986541656004181308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_4
+      name: inky_4
       rect:
         serializedVersion: 2
         x: 128
@@ -209,20 +215,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ff660b757348600800000000000000
-      internalID: 469561110914596722
+      spriteID: b9b6b23c7c5627700800000000000000
+      internalID: 536603214257810331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pacman_5
+      name: inky_5
       rect:
         serializedVersion: 2
         x: 160
@@ -230,14 +236,56 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b9885ccfa9ec1110800000000000000
-      internalID: 1233117339249576371
+      spriteID: 0e568f5d76ff33940800000000000000
+      internalID: 5274840410017523168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inky_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92b3d342869172a0800000000000000
+      internalID: -6741441680969059686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inky_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384d6845c59e234d0800000000000000
+      internalID: -3156203806068910973
       vertices: []
       indices: 
       edges: []
