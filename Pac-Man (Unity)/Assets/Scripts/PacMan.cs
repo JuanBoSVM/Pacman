@@ -4,65 +4,56 @@ using UnityEngine;
 
 public class PacMan : MonoBehaviour
 {
-    public float speed = 5.0f;
-    public Transform movePoint;
+    public float speed = 4.0f;
     private Vector2 direction = Vector2.zero;
     public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Detach the move point from the player
-        movePoint.parent = null;
         direction = Vector2.right;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, movePoint.position) == 0f)
-        {
-            CheckInput();
-        }
-
+        CheckInput();
         Move();
         UpdateOrientation();
+    }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+    void CheckInput()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            direction = Vector2.left;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            direction = Vector2.right;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        {
+            direction = Vector2.up;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        {
+            direction = Vector2.down;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
             speed = 0.0f;
             anim.SetBool("Alive", false);
         }
     }
 
-    void CheckInput()
-    {
-        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
-        {
-            movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-
-            direction.x = Input.GetAxisRaw("Horizontal");
-            direction.y = 0f;
-        }
-
-        else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
-        {
-            movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
-
-            direction.x = 0f;
-            direction.y = Input.GetAxisRaw("Vertical");
-        }
-
-
-        else
-        {
-            movePoint.position += (Vector3)direction;
-        }
-    }
-
     void Move()
     {
-        transform.localPosition = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
+        transform.localPosition += (Vector3)(direction * speed) * Time.deltaTime;
     }
 
     void UpdateOrientation()
