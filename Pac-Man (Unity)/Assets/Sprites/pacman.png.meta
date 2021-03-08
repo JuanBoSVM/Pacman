@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 1233117339249576371
     second: pacman_5
+  - first:
+      213: 5837186894641243381
+    second: pacman_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -238,6 +241,27 @@ TextureImporter:
       bones: []
       spriteID: 3b9885ccfa9ec1110800000000000000
       internalID: 1233117339249576371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pacman_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f428aecd8ad10150800000000000000
+      internalID: 5837186894641243381
       vertices: []
       indices: 
       edges: []
