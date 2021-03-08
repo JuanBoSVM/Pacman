@@ -8,6 +8,8 @@ public class Node : MonoBehaviour
     public Vector2[] validDirections;
 
     private Vector2 position;
+    public float[] peso;
+    public Vector2[] trajectory;
 
     // Start is called before the first frame update
     void Start()

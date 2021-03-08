@@ -154,6 +154,8 @@ MonoBehaviour:
   - {fileID: 1388768591}
   - {fileID: 1407589608}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &73341584
 Transform:
   m_ObjectHideFlags: 0
@@ -202,6 +204,8 @@ MonoBehaviour:
   - {fileID: 257722934}
   - {fileID: 1237121517}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &78978185
 Transform:
   m_ObjectHideFlags: 0
@@ -250,6 +254,8 @@ MonoBehaviour:
   - {fileID: 2145330568}
   - {fileID: 1195192612}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &98782167
 Transform:
   m_ObjectHideFlags: 0
@@ -358,7 +364,7 @@ RectTransform:
   - {fileID: 1803065046}
   - {fileID: 834641123}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -533,6 +539,8 @@ MonoBehaviour:
   - {fileID: 536474094}
   - {fileID: 1362884652}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &233963037
 Transform:
   m_ObjectHideFlags: 0
@@ -581,6 +589,8 @@ MonoBehaviour:
   - {fileID: 818697067}
   - {fileID: 346058931}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &257722935
 Transform:
   m_ObjectHideFlags: 0
@@ -628,6 +638,8 @@ MonoBehaviour:
   - {fileID: 1020377431}
   - {fileID: 1182773310}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &297564120
 Transform:
   m_ObjectHideFlags: 0
@@ -676,6 +688,8 @@ MonoBehaviour:
   - {fileID: 98782166}
   - {fileID: 527521706}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &302722868
 Transform:
   m_ObjectHideFlags: 0
@@ -723,6 +737,8 @@ MonoBehaviour:
   - {fileID: 416685836}
   - {fileID: 1511747964}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &320396229
 Transform:
   m_ObjectHideFlags: 0
@@ -770,6 +786,8 @@ MonoBehaviour:
   - {fileID: 257722934}
   - {fileID: 1292611104}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &346058932
 Transform:
   m_ObjectHideFlags: 0
@@ -818,6 +836,8 @@ MonoBehaviour:
   - {fileID: 1872622314}
   - {fileID: 320396228}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &416685837
 Transform:
   m_ObjectHideFlags: 0
@@ -847,7 +867,7 @@ PrefabInstance:
     - target: {fileID: 3417258593330465212, guid: 553308b7edae91e4b840463e8f3bfc28,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3417258593330465212, guid: 553308b7edae91e4b840463e8f3bfc28,
         type: 3}
@@ -901,6 +921,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8377134640023259042, guid: 553308b7edae91e4b840463e8f3bfc28,
         type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8377134640023259042, guid: 553308b7edae91e4b840463e8f3bfc28,
+        type: 3}
+      propertyPath: targetNode
+      value: 
+      objectReference: {fileID: 1740238200}
+    - target: {fileID: 8377134640023259042, guid: 553308b7edae91e4b840463e8f3bfc28,
+        type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 1736499734}
@@ -939,6 +969,8 @@ MonoBehaviour:
   - {fileID: 2145330568}
   - {fileID: 2075175328}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &451410843
 Transform:
   m_ObjectHideFlags: 0
@@ -987,6 +1019,8 @@ MonoBehaviour:
   - {fileID: 1415558302}
   - {fileID: 755631222}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &490297647
 Transform:
   m_ObjectHideFlags: 0
@@ -1035,6 +1069,8 @@ MonoBehaviour:
   - {fileID: 1883129902}
   - {fileID: 791914480}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &512054759
 Transform:
   m_ObjectHideFlags: 0
@@ -1083,6 +1119,8 @@ MonoBehaviour:
   - {fileID: 1649261860}
   - {fileID: 961101617}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &527521707
 Transform:
   m_ObjectHideFlags: 0
@@ -1131,6 +1169,8 @@ MonoBehaviour:
   - {fileID: 2083961575}
   - {fileID: 1883129902}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &536474095
 Transform:
   m_ObjectHideFlags: 0
@@ -1179,6 +1219,8 @@ MonoBehaviour:
   - {fileID: 1388768591}
   - {fileID: 1771668749}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &541376936
 Transform:
   m_ObjectHideFlags: 0
@@ -1227,6 +1269,8 @@ MonoBehaviour:
   - {fileID: 718380654}
   - {fileID: 1736499734}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &545712184
 Transform:
   m_ObjectHideFlags: 0
@@ -1274,6 +1318,8 @@ MonoBehaviour:
   - {fileID: 1206967487}
   - {fileID: 1223570853}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &549865234
 Transform:
   m_ObjectHideFlags: 0
@@ -1321,6 +1367,8 @@ MonoBehaviour:
   - {fileID: 1519127512}
   - {fileID: 1872622314}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &576306791
 Transform:
   m_ObjectHideFlags: 0
@@ -1368,6 +1416,8 @@ MonoBehaviour:
   - {fileID: 718380654}
   - {fileID: 1076486538}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &648514202
 Transform:
   m_ObjectHideFlags: 0
@@ -1463,7 +1513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718380653
 GameObject:
@@ -1499,6 +1549,8 @@ MonoBehaviour:
   - {fileID: 648514201}
   - {fileID: 1037253699}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &718380655
 Transform:
   m_ObjectHideFlags: 0
@@ -1546,6 +1598,8 @@ MonoBehaviour:
   - {fileID: 1289824944}
   - {fileID: 1223570853}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &747679805
 Transform:
   m_ObjectHideFlags: 0
@@ -1608,6 +1662,8 @@ MonoBehaviour:
   - {fileID: 490297646}
   - {fileID: 1711487276}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!1 &780747355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1697,8 @@ MonoBehaviour:
   - {fileID: 2070780012}
   - {fileID: 1959585845}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &780747357
 Transform:
   m_ObjectHideFlags: 0
@@ -1689,6 +1747,8 @@ MonoBehaviour:
   - {fileID: 981048250}
   - {fileID: 959659464}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &791914481
 Transform:
   m_ObjectHideFlags: 0
@@ -1736,6 +1796,8 @@ MonoBehaviour:
   - {fileID: 257722934}
   - {fileID: 1237121517}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &818697068
 Transform:
   m_ObjectHideFlags: 0
@@ -1878,6 +1940,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3001887163208747271, guid: 38fe5df602c9cab4a9f52448070c2298,
         type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3001887163208747271, guid: 38fe5df602c9cab4a9f52448070c2298,
+        type: 3}
+      propertyPath: targetNode
+      value: 
+      objectReference: {fileID: 1740238200}
+    - target: {fileID: -3001887163208747271, guid: 38fe5df602c9cab4a9f52448070c2298,
+        type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 1045501858}
@@ -1889,7 +1961,7 @@ PrefabInstance:
     - target: {fileID: 6840620817035952666, guid: 38fe5df602c9cab4a9f52448070c2298,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6840620817035952666, guid: 38fe5df602c9cab4a9f52448070c2298,
         type: 3}
@@ -1952,6 +2024,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2674061698232055253, guid: 12361c6b8fcaab043bc72c954c63a69d,
         type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2674061698232055253, guid: 12361c6b8fcaab043bc72c954c63a69d,
+        type: 3}
+      propertyPath: targetNode
+      value: 
+      objectReference: {fileID: 1740238200}
+    - target: {fileID: -2674061698232055253, guid: 12361c6b8fcaab043bc72c954c63a69d,
+        type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 233963036}
@@ -1963,7 +2045,7 @@ PrefabInstance:
     - target: {fileID: 579937142361811238, guid: 12361c6b8fcaab043bc72c954c63a69d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 579937142361811238, guid: 12361c6b8fcaab043bc72c954c63a69d,
         type: 3}
@@ -2050,6 +2132,8 @@ MonoBehaviour:
   - {fileID: 1742927184}
   - {fileID: 1674671932}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &904779070
 Transform:
   m_ObjectHideFlags: 0
@@ -2128,7 +2212,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959659463
 GameObject:
@@ -2164,6 +2248,8 @@ MonoBehaviour:
   - {fileID: 1540881382}
   - {fileID: 1491488689}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &959659465
 Transform:
   m_ObjectHideFlags: 0
@@ -2211,6 +2297,8 @@ MonoBehaviour:
   - {fileID: 416685836}
   - {fileID: 527521706}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &961101618
 Transform:
   m_ObjectHideFlags: 0
@@ -2258,6 +2346,8 @@ MonoBehaviour:
   - {fileID: 791914480}
   - {fileID: 1540881382}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &981048251
 Transform:
   m_ObjectHideFlags: 0
@@ -2287,7 +2377,7 @@ PrefabInstance:
     - target: {fileID: 1994548507180792043, guid: 6132d2d37c1dbb34eab0a064c1d3d4b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1994548507180792043, guid: 6132d2d37c1dbb34eab0a064c1d3d4b6,
         type: 3}
@@ -2341,6 +2431,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5487665303070040209, guid: 6132d2d37c1dbb34eab0a064c1d3d4b6,
         type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487665303070040209, guid: 6132d2d37c1dbb34eab0a064c1d3d4b6,
+        type: 3}
+      propertyPath: targetNode
+      value: 
+      objectReference: {fileID: 1740238200}
+    - target: {fileID: 5487665303070040209, guid: 6132d2d37c1dbb34eab0a064c1d3d4b6,
+        type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 1936002979}
@@ -2380,6 +2480,8 @@ MonoBehaviour:
   - {fileID: 302722867}
   - {fileID: 1852128908}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &994801869
 Transform:
   m_ObjectHideFlags: 0
@@ -2427,6 +2529,8 @@ MonoBehaviour:
   - {fileID: 1740238200}
   - {fileID: 297564119}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1020377432
 Transform:
   m_ObjectHideFlags: 0
@@ -2474,6 +2578,8 @@ MonoBehaviour:
   - {fileID: 2070780012}
   - {fileID: 1301249606}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1028135696
 Transform:
   m_ObjectHideFlags: 0
@@ -2655,6 +2761,8 @@ MonoBehaviour:
   - {fileID: 2083961575}
   - {fileID: 78978184}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1037253700
 Transform:
   m_ObjectHideFlags: 0
@@ -2702,6 +2810,8 @@ MonoBehaviour:
   - {fileID: 1415558302}
   - {fileID: 1959585845}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1045501859
 Transform:
   m_ObjectHideFlags: 0
@@ -2750,6 +2860,8 @@ MonoBehaviour:
   - {fileID: 994801868}
   - {fileID: 2068777378}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1066324757
 Transform:
   m_ObjectHideFlags: 0
@@ -2797,6 +2909,8 @@ MonoBehaviour:
   - {fileID: 1407589608}
   - {fileID: 648514201}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1076486539
 Transform:
   m_ObjectHideFlags: 0
@@ -2844,6 +2958,8 @@ MonoBehaviour:
   - {fileID: 1491488689}
   - {fileID: 297564119}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1182773311
 Transform:
   m_ObjectHideFlags: 0
@@ -2892,6 +3008,8 @@ MonoBehaviour:
   - {fileID: 1289824944}
   - {fileID: 98782166}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1195192613
 Transform:
   m_ObjectHideFlags: 0
@@ -2939,6 +3057,8 @@ MonoBehaviour:
   - {fileID: 1554218505}
   - {fileID: 549865233}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1206967488
 Transform:
   m_ObjectHideFlags: 0
@@ -2986,6 +3106,8 @@ MonoBehaviour:
   - {fileID: 747679804}
   - {fileID: 549865233}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1223570854
 Transform:
   m_ObjectHideFlags: 0
@@ -3010,7 +3132,7 @@ PrefabInstance:
     - target: {fileID: 7567275205690105350, guid: 318714ccb233c1b43af40a37c2d76c1c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7567275205690105350, guid: 318714ccb233c1b43af40a37c2d76c1c,
         type: 3}
@@ -3108,6 +3230,8 @@ MonoBehaviour:
   - {fileID: 818697067}
   - {fileID: 1342881235}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1237121518
 Transform:
   m_ObjectHideFlags: 0
@@ -3155,6 +3279,8 @@ MonoBehaviour:
   - {fileID: 1674671932}
   - {fileID: 1711487276}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1248776473
 Transform:
   m_ObjectHideFlags: 0
@@ -3335,6 +3461,8 @@ MonoBehaviour:
   - {fileID: 1195192612}
   - {fileID: 747679804}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1289824945
 Transform:
   m_ObjectHideFlags: 0
@@ -3383,6 +3511,8 @@ MonoBehaviour:
   - {fileID: 1511747964}
   - {fileID: 346058931}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1292611105
 Transform:
   m_ObjectHideFlags: 0
@@ -3430,6 +3560,8 @@ MonoBehaviour:
   - {fileID: 1362884652}
   - {fileID: 1028135695}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1301249607
 Transform:
   m_ObjectHideFlags: 0
@@ -3478,6 +3610,8 @@ MonoBehaviour:
   - {fileID: 512054758}
   - {fileID: 1519127512}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1342881236
 Transform:
   m_ObjectHideFlags: 0
@@ -3598,7 +3732,7 @@ Transform:
   - {fileID: 904779070}
   - {fileID: 755631221}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362884651
 GameObject:
@@ -3633,6 +3767,8 @@ MonoBehaviour:
   - {fileID: 233963036}
   - {fileID: 1301249606}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1362884653
 Transform:
   m_ObjectHideFlags: 0
@@ -3681,6 +3817,8 @@ MonoBehaviour:
   - {fileID: 1603519982}
   - {fileID: 73341583}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1388768592
 Transform:
   m_ObjectHideFlags: 0
@@ -3728,6 +3866,8 @@ MonoBehaviour:
   - {fileID: 1736499734}
   - {fileID: 1407589608}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1394668526
 Transform:
   m_ObjectHideFlags: 0
@@ -3776,6 +3916,8 @@ MonoBehaviour:
   - {fileID: 1076486538}
   - {fileID: 73341583}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1407589609
 Transform:
   m_ObjectHideFlags: 0
@@ -3824,6 +3966,8 @@ MonoBehaviour:
   - {fileID: 1066324756}
   - {fileID: 1045501858}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1415558303
 Transform:
   m_ObjectHideFlags: 0
@@ -3872,6 +4016,8 @@ MonoBehaviour:
   - {fileID: 1519127512}
   - {fileID: 1182773310}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1491488690
 Transform:
   m_ObjectHideFlags: 0
@@ -3920,6 +4066,8 @@ MonoBehaviour:
   - {fileID: 1542338009}
   - {fileID: 1292611104}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1511747965
 Transform:
   m_ObjectHideFlags: 0
@@ -3968,6 +4116,8 @@ MonoBehaviour:
   - {fileID: 1491488689}
   - {fileID: 576306790}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1519127513
 Transform:
   m_ObjectHideFlags: 0
@@ -4015,6 +4165,8 @@ MonoBehaviour:
   - {fileID: 981048250}
   - {fileID: 959659464}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1540881383
 Transform:
   m_ObjectHideFlags: 0
@@ -4062,6 +4214,8 @@ MonoBehaviour:
   - {fileID: 2068777378}
   - {fileID: 1511747964}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1542338010
 Transform:
   m_ObjectHideFlags: 0
@@ -4118,7 +4272,7 @@ Transform:
   m_Children:
   - {fileID: 2066699925}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1554218504
 GameObject:
@@ -4153,6 +4307,8 @@ MonoBehaviour:
   - {fileID: 1883129902}
   - {fileID: 1206967487}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1554218506
 Transform:
   m_ObjectHideFlags: 0
@@ -4200,6 +4356,8 @@ MonoBehaviour:
   - {fileID: 545712183}
   - {fileID: 1388768591}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1603519983
 Transform:
   m_ObjectHideFlags: 0
@@ -4248,6 +4406,8 @@ MonoBehaviour:
   - {fileID: 1874670029}
   - {fileID: 527521706}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1649261861
 Transform:
   m_ObjectHideFlags: 0
@@ -4296,6 +4456,8 @@ MonoBehaviour:
   - {fileID: 1248776472}
   - {fileID: 904779069}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1674671933
 Transform:
   m_ObjectHideFlags: 0
@@ -4343,6 +4505,8 @@ MonoBehaviour:
   - {fileID: 1248776472}
   - {fileID: 755631222}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1711487277
 Transform:
   m_ObjectHideFlags: 0
@@ -4390,6 +4554,8 @@ MonoBehaviour:
   - {fileID: 545712183}
   - {fileID: 1394668525}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1736499735
 Transform:
   m_ObjectHideFlags: 0
@@ -4437,6 +4603,8 @@ MonoBehaviour:
   - {fileID: 1649261860}
   - {fileID: 1020377431}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1740238201
 Transform:
   m_ObjectHideFlags: 0
@@ -4484,6 +4652,8 @@ MonoBehaviour:
   - {fileID: 1872622314}
   - {fileID: 1292611104}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1741937378
 Transform:
   m_ObjectHideFlags: 0
@@ -4531,6 +4701,8 @@ MonoBehaviour:
   - {fileID: 490297646}
   - {fileID: 904779069}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1742927185
 Transform:
   m_ObjectHideFlags: 0
@@ -4799,6 +4971,8 @@ MonoBehaviour:
   - {fileID: 994801868}
   - {fileID: 2068777378}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1852128909
 Transform:
   m_ObjectHideFlags: 0
@@ -4847,6 +5021,8 @@ MonoBehaviour:
   - {fileID: 1741937377}
   - {fileID: 416685836}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1872622315
 Transform:
   m_ObjectHideFlags: 0
@@ -4895,6 +5071,8 @@ MonoBehaviour:
   - {fileID: 2145330568}
   - {fileID: 2075175328}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1874670030
 Transform:
   m_ObjectHideFlags: 0
@@ -4943,6 +5121,8 @@ MonoBehaviour:
   - {fileID: 1554218505}
   - {fileID: 512054758}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1883129903
 Transform:
   m_ObjectHideFlags: 0
@@ -4990,6 +5170,8 @@ MonoBehaviour:
   - {fileID: 541376935}
   - {fileID: 755631222}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1936002980
 Transform:
   m_ObjectHideFlags: 0
@@ -5038,6 +5220,8 @@ MonoBehaviour:
   - {fileID: 780747356}
   - {fileID: 1195192612}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &1959585846
 Transform:
   m_ObjectHideFlags: 0
@@ -10681,6 +10865,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors: []
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &2068777379
 Transform:
   m_ObjectHideFlags: 0
@@ -10728,6 +10914,8 @@ MonoBehaviour:
   - {fileID: 780747356}
   - {fileID: 1028135695}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &2070780013
 Transform:
   m_ObjectHideFlags: 0
@@ -10775,6 +10963,8 @@ MonoBehaviour:
   - {fileID: 1874670029}
   - {fileID: 451410842}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &2075175329
 Transform:
   m_ObjectHideFlags: 0
@@ -10822,6 +11012,8 @@ MonoBehaviour:
   - {fileID: 536474094}
   - {fileID: 1037253699}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &2083961576
 Transform:
   m_ObjectHideFlags: 0
@@ -10870,6 +11062,8 @@ MonoBehaviour:
   - {fileID: 451410842}
   - {fileID: 98782166}
   validDirections: []
+  peso: []
+  trajectory: []
 --- !u!4 &2145330569
 Transform:
   m_ObjectHideFlags: 0
