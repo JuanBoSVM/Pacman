@@ -27,6 +27,8 @@ public class PacMan : MonoBehaviour
         direction = Vector2.right;
 
         transform.position = startingPosition.GetPosition();
+
+        currentNode = startingPosition;
     }
 
     // Update is called once per frame
@@ -65,6 +67,7 @@ public class PacMan : MonoBehaviour
         lastPosition = transform.position;
     }
 
+
     void CheckInput()
     {
 
@@ -75,6 +78,23 @@ public class PacMan : MonoBehaviour
             direction.x = Input.GetAxisRaw("Horizontal");
             direction.y = 0f;
 
+            foreach (Node i in currentNode.neighbors)
+            {
+                if (direction.x == -1)
+                {
+                    if (currentNode.transform.position.x > i.transform.position.x)
+                    {
+                        targetNode = i;
+                    }
+                }
+                else
+                {
+                    if (currentNode.transform.position.x < i.transform.position.x)
+                    {
+                        targetNode = i;
+                    }
+                }
+            }
         }
 
         // Try to Move Vertically
@@ -83,6 +103,25 @@ public class PacMan : MonoBehaviour
         {
             direction.x = 0f;
             direction.y = Input.GetAxisRaw("Vertical");
+
+            foreach (Node i in currentNode.neighbors)
+            {
+                if (direction.y == -1)
+                {
+                    if (currentNode.transform.position.y > transform.position.y)
+                    {
+                        targetNode = i;
+                    }
+                }
+                else
+                {
+                    if (currentNode.transform.position.y < transform.position.y)
+                    {
+                        targetNode = i;
+                    }
+                }
+            }
+
         }
 
 
@@ -95,7 +134,7 @@ public class PacMan : MonoBehaviour
     //Move PacMan towards move point
     void Move()
     {
-
+        Vector3.MoveTowards(transform.position, targetNode.transform.position, speed*Time.deltaTime);
     }
 
     void deathCheck()
