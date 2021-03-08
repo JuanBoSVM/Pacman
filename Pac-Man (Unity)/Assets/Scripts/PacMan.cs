@@ -25,10 +25,11 @@ public class PacMan : MonoBehaviour
     void Start()
     {
         direction = Vector2.right;
+        currentNode = startingPosition;
 
         transform.position = startingPosition.GetPosition();
+        targetNode = currentNode;
 
-        currentNode = startingPosition;
     }
 
     // Update is called once per frame
@@ -37,7 +38,7 @@ public class PacMan : MonoBehaviour
         deathCheck();
 
         // Reference the target node to compare distance
-        if (Vector3.Distance(transform.position, targetNode.GetPosition()) == 0f)
+        if (currentNode.GetPosition() == targetNode.GetPosition())
         {
             CheckInput();
 
@@ -108,14 +109,14 @@ public class PacMan : MonoBehaviour
             {
                 if (direction.y == -1)
                 {
-                    if (currentNode.transform.position.y > transform.position.y)
+                    if (currentNode.transform.position.y > i.transform.position.y)
                     {
                         targetNode = i;
                     }
                 }
                 else
                 {
-                    if (currentNode.transform.position.y < transform.position.y)
+                    if (currentNode.transform.position.y < i.transform.position.y)
                     {
                         targetNode = i;
                     }
@@ -127,14 +128,50 @@ public class PacMan : MonoBehaviour
 
         else
         {
-            // Repeat last input
+            foreach (Node i in currentNode.neighbors)
+            {
+                if (direction.x == -1)
+                {
+                    if (currentNode.transform.position.x > i.transform.position.x)
+                    {
+                        targetNode = i;
+                    }
+                }
+                else if (direction.x == 1)
+                {
+                    if (currentNode.transform.position.x < i.transform.position.x)
+                    {
+                        targetNode = i;
+                    }
+                }
+                else if (direction.y == -1)
+                {
+                    if (currentNode.transform.position.y > i.transform.position.y)
+                    {
+                        targetNode = i;
+                    }
+                }
+                else
+                {
+                    if (currentNode.transform.position.y < i.transform.position.y)
+                    {
+                        targetNode = i;
+                    }
+                }
+            }
         }
     }
 
     //Move PacMan towards move point
     void Move()
     {
-        Vector3.MoveTowards(transform.position, targetNode.transform.position, speed*Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetNode.GetPosition(), speed * Time.deltaTime);
+
+        if (transform.position == (Vector3)targetNode.GetPosition())
+        {
+            lastNode = currentNode;
+            currentNode = targetNode;
+        }
     }
 
     void deathCheck()

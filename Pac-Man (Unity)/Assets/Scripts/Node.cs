@@ -9,10 +9,7 @@ public class Node : MonoBehaviour
     public float [] peso;
     public Vector2[] trayectory;
     public PacMan player;
-
     private Vector2 position;
-    public float[] peso;
-    public Vector2[] trajectory;
 
     static private Node PacmanNotTheObject;
 
