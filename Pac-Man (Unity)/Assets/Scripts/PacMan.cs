@@ -14,7 +14,6 @@ public class PacMan : MonoBehaviour
     public AudioSource eatSound1;
     public AudioSource eatSound2;
     public AudioSource deathSound;
-    private bool moving = true;
     private const float delay = .13f;
 
     // Start is called before the first frame update
@@ -65,13 +64,8 @@ public class PacMan : MonoBehaviour
     {
         if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
         {
-            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, colission))
-            {
-                movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-
-                direction.x = Input.GetAxisRaw("Horizontal");
-                direction.y = 0f;
-            }
+            direction.x = Input.GetAxisRaw("Horizontal");
+            direction.y = 0f;
 
         }
 
@@ -92,28 +86,15 @@ public class PacMan : MonoBehaviour
         {
             if (!Physics2D.OverlapCircle(movePoint.position + (Vector3)direction, .2f, colission))
             {
-                movePoint.position += (Vector3)direction;
-                moving = true;
-            }
-
-            else
-            {
-                moving = false;
+                movePoint.position += (Vector3)direction;                
             }
         }
     }
 
+    //Move PacMan toward move point
     void Move()
     {
-        if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, colission))
-        {
-            transform.localPosition = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
-        }
 
-        else
-        {
-            movePoint.position = transform.position;
-        }
     }
 
     void UpdateOrientation()
