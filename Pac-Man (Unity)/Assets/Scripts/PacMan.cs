@@ -9,12 +9,18 @@ public class PacMan : MonoBehaviour
     private Vector2 direction = Vector2.zero;
     private Vector3 lastPosition = Vector3.zero;
     public Animator anim;
-    public LayerMask colission;
     public LayerMask ghosts;
     public AudioSource eatSound1;
     public AudioSource eatSound2;
     public AudioSource deathSound;
     private const float delay = .13f;
+
+    // Node References
+    public Node startingPosition;
+    private Node
+        currentNode,
+        lastNode,
+        targetNode;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +28,8 @@ public class PacMan : MonoBehaviour
         // Detach the move point from the player
         movePoint.parent = null;
         direction = Vector2.right;
+
+        transform.position = startingPosition.GetPosition();
     }
 
     // Update is called once per frame
@@ -46,7 +54,6 @@ public class PacMan : MonoBehaviour
         }
 
         Move();
-        UpdateOrientation();
 
         if (transform.position != lastPosition && anim.GetBool("Alive"))
         {
@@ -62,6 +69,9 @@ public class PacMan : MonoBehaviour
 
     void CheckInput()
     {
+
+        // Try to move Horizontally
+
         if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
         {
             direction.x = Input.GetAxisRaw("Horizontal");
@@ -69,59 +79,25 @@ public class PacMan : MonoBehaviour
 
         }
 
+        // Try to Move Vertically
+
         else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
         {
-            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, colission))
-            {
-                movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
-
-                direction.x = 0f;
-                direction.y = Input.GetAxisRaw("Vertical");
-            }
-
+            direction.x = 0f;
+            direction.y = Input.GetAxisRaw("Vertical");
         }
 
 
         else
         {
-            if (!Physics2D.OverlapCircle(movePoint.position + (Vector3)direction, .2f, colission))
-            {
-                movePoint.position += (Vector3)direction;                
-            }
+            // Repeat last input
         }
     }
 
-    //Move PacMan toward move point
+    //Move PacMan towards move point
     void Move()
     {
 
-    }
-
-    void UpdateOrientation()
-    {
-        if (direction == Vector2.left)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-
-        else if (direction == Vector2.right)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-
-        else if (direction == Vector2.up)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-            transform.localRotation = Quaternion.Euler(0, 0, 90);
-        }
-
-        else if (direction == Vector2.down)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-            transform.localRotation = Quaternion.Euler(0, 0, 270);
-        }
     }
 
     void deathCheck()

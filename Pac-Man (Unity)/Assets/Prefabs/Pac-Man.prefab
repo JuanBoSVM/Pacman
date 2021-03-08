@@ -122,15 +122,13 @@ MonoBehaviour:
   speed: 5
   movePoint: {fileID: 7567275205752988365}
   anim: {fileID: 7567275205690105352}
-  colission:
-    serializedVersion: 2
-    m_Bits: 256
   ghosts:
     serializedVersion: 2
     m_Bits: 512
   eatSound1: {fileID: 7567275205690105355}
   eatSound2: {fileID: 7567275205690105356}
   deathSound: {fileID: 7567275205690105354}
+  startingPosition: {fileID: 0}
 --- !u!82 &7567275205690105354
 AudioSource:
   m_ObjectHideFlags: 0
