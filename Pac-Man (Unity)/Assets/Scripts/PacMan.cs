@@ -14,7 +14,6 @@ public class PacMan : MonoBehaviour
     public AudioSource eatSound1;
     public AudioSource eatSound2;
     public AudioSource deathSound;
-    private bool moving = true;
     private const float delay = .13f;
 
     // Start is called before the first frame update
@@ -92,13 +91,7 @@ public class PacMan : MonoBehaviour
         {
             if (!Physics2D.OverlapCircle(movePoint.position + (Vector3)direction, .2f, colission))
             {
-                movePoint.position += (Vector3)direction;
-                moving = true;
-            }
-
-            else
-            {
-                moving = false;
+                movePoint.position += (Vector3)direction;                
             }
         }
     }
