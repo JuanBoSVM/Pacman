@@ -22,11 +22,11 @@ public class Ghost : MonoBehaviour
 
     // References
     public GameObject pacMan;
-    //public Node startingPosition;
-    /*private Node
+    public Node startingPosition;
+    private Node
         currentNode,
         lastNode,
-        targetNode;*/
+        targetNode;
         
     // Attributes
     public float moveSpeed = 4.9f;
@@ -49,5 +49,8 @@ public class Ghost : MonoBehaviour
         
     }
 
-    
+    Node GetNodeAtPosition (Vector2 _position)
+    {
+        return startingPosition;
+    }
 }
