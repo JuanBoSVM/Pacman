@@ -5,7 +5,6 @@ using UnityEngine;
 public class PacMan : MonoBehaviour
 {
     public float speed = 5.0f;
-    public Transform movePoint;
     private Vector2 direction = Vector2.zero;
     private Vector3 lastPosition = Vector3.zero;
     public Animator anim;
@@ -25,8 +24,6 @@ public class PacMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Detach the move point from the player
-        movePoint.parent = null;
         direction = Vector2.right;
 
         transform.position = startingPosition.GetPosition();
@@ -37,7 +34,8 @@ public class PacMan : MonoBehaviour
     {
         deathCheck();
 
-        if (Vector3.Distance(transform.position, movePoint.position) == 0f)
+        // Reference the target node to compare distance
+        if (Vector3.Distance(transform.position, targetNode.GetPosition()) == 0f)
         {
             CheckInput();
 
