@@ -15,6 +15,7 @@ public class PacMan : MonoBehaviour
     public AudioSource eatSound2;
     public AudioSource deathSound;
     private bool moving = true;
+    private const float delay = .13f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,34 +23,12 @@ public class PacMan : MonoBehaviour
         // Detach the move point from the player
         movePoint.parent = null;
         direction = Vector2.right;
-        eatSound1.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
         deathCheck();
-
-        if (moving)
-        {
-            if (eatSound1.isPlaying)
-            {
-                eatSound2.PlayDelayed(.08f);
-            }
-
-            else
-            {
-                eatSound1.PlayDelayed(.1f);
-            }
-
-
-        }
-
-        else
-        {
-            eatSound1.Pause();
-            eatSound2.Pause();
-        }
 
         if (Vector3.Distance(transform.position, movePoint.position) == 0f)
         {
@@ -69,6 +48,17 @@ public class PacMan : MonoBehaviour
 
         Move();
         UpdateOrientation();
+
+        if (transform.position != lastPosition && anim.GetBool("Alive"))
+        {
+            if (!eatSound1.isPlaying && !eatSound2.isPlaying)
+            {
+                eatSound1.PlayDelayed(delay);
+                eatSound2.PlayDelayed(delay * 2);
+            }
+        }
+
+        lastPosition = transform.position;
     }
 
     void CheckInput()
@@ -87,7 +77,7 @@ public class PacMan : MonoBehaviour
 
         else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
         {
-            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, colission))
+            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, colission))
             {
                 movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
 
@@ -155,13 +145,13 @@ public class PacMan : MonoBehaviour
 
     void deathCheck()
     {
-        if (Physics2D.OverlapCircle(transform.position, .2f, ghosts))
+        if (Physics2D.OverlapCircle(transform.position, .2f, ghosts) && anim.GetBool("Alive"))
         {
             gameObject.GetComponent<Animator>().enabled = true;
             speed = 0.0f;
             anim.SetBool("Alive", false);
-            eatSound1.Pause();
-            eatSound2.Pause();
+            eatSound1.Stop();
+            eatSound2.Stop();
             deathSound.Play();
         }
     }
