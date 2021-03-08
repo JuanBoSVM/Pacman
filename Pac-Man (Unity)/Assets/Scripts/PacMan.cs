@@ -64,13 +64,8 @@ public class PacMan : MonoBehaviour
     {
         if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
         {
-            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, colission))
-            {
-                movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-
-                direction.x = Input.GetAxisRaw("Horizontal");
-                direction.y = 0f;
-            }
+            direction.x = Input.GetAxisRaw("Horizontal");
+            direction.y = 0f;
 
         }
 
@@ -96,17 +91,10 @@ public class PacMan : MonoBehaviour
         }
     }
 
+    //Move PacMan toward move point
     void Move()
     {
-        if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, colission))
-        {
-            transform.localPosition = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
-        }
 
-        else
-        {
-            movePoint.position = transform.position;
-        }
     }
 
     void UpdateOrientation()
