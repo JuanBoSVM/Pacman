@@ -18,7 +18,6 @@ public class PacMan : MonoBehaviour
     public Node startingPosition;
     private Node
         currentNode,
-        lastNode,
         targetNode;
 
     // Start is called before the first frame update
@@ -169,9 +168,11 @@ public class PacMan : MonoBehaviour
 
         if (transform.position == (Vector3)targetNode.GetPosition())
         {
-            lastNode = currentNode;
             currentNode = targetNode;
         }
+
+        anim.SetFloat("Horizontal", direction.x);
+        anim.SetFloat("Vertical", direction.y);
     }
 
     void deathCheck()

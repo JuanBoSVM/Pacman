@@ -10,6 +10,7 @@ public class Node : MonoBehaviour
     public Vector2[] trayectory;
     public PacMan player;
     private Vector2 position;
+    public float distanceTo;
 
     static private Node PacmanNotTheObject;
 
@@ -25,11 +26,8 @@ public class Node : MonoBehaviour
 
         trayectory = new Vector2[neighbors.Length];
 
+        PacmanNotTheObject = this;
 
-        if (player.transform.position == transform.position)
-        {
-            PacmanNotTheObject = this;
-        }
 
 
         for (int i = 0; i < neighbors.Length; i++)
@@ -71,5 +69,9 @@ public class Node : MonoBehaviour
         return position;
     }
 
+    public Node GetPac()
+    {
+        return PacmanNotTheObject;
+    }
+
 }
-//Medidas del gameboard (40,22)
